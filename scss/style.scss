@@ -1,4 +1,4 @@
-@import "config";
+@import "variables";
 @import "utilities";
 
 * {
@@ -28,7 +28,7 @@ p {
     align-items: center;
 
     a {
-      font-size: map-get($font-sizes, link-font);
+      font-size: font-size(link-font);
     }
 
     a:hover {
@@ -54,7 +54,7 @@ p {
     }
 
     h1 {
-      font-size: map-get($font-sizes, lg-screen-heading);
+      font-size: font-size(lg-screen-heading);
     }
 
     p {
@@ -63,7 +63,7 @@ p {
 
     @media (max-width: 768px) {
       h1 {
-        font-size: map-get($font-sizes, small-screen-heading);
+        font-size: font-size(small-screen-heading);
       }
     }
   }

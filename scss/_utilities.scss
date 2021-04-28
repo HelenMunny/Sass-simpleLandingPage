@@ -1,0 +1,28 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  overflow: hidden;
+}
+
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 3px;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(0.98);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background: $background;
+  color: $para-text;
+}
+.btn-secondary {
+  @extend %btn;
+  background-color: darken($header-background, 15%);
+}

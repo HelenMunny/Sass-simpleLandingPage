@@ -1,5 +1,6 @@
 @import "config";
 @import "utilities";
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 
 * {
   border: 0;
@@ -19,6 +20,9 @@ body {
 p {
   color: $para-text;
 }
+.logo {
+  font-family: "Original Surfer", cursive;
+}
 .showcase {
   background: $header-background;
 
@@ -33,6 +37,11 @@ p {
 
     a:hover {
       color: $para-text;
+    }
+    @media (max-width: 768px) {
+      a {
+        font-size: font-size(link-small);
+      }
     }
   }
   ul {
@@ -84,6 +93,7 @@ img {
   width: 100%;
 }
 
+// theme mixin
 .showcase {
   @include theme($light-theme: false);
 }
